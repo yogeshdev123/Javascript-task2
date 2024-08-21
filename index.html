@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            border: solid;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 25%;
+            transition: all 1s;
+        }
+        a:hover{
+               background-color: black;
+               color: white;
+        }
+    </style>
+    <script>
+        var i=0;
+        var j=1;
+        var str="";
+        var val=0;
+        var inp=+prompt("Enter a number to print Non-fibbonaci:  ");
+        while(inp>0){
+            str=det(i,j,str);
+            let temp=j;
+            j=i+j;
+            i=temp;
+        
+            
+        }
+        function det(i,j,str){
+            for(let k=i+1;k<j;k++){
+                str+=" "+k;
+                val=k;
+                inp--;
+                if(inp==0)break;
+            }
+            return str;
+        }
+        alert(`Non-fibbonaci numbers within ${inp} are ${str} and the ${inp} th number is ${val}`);
+        let i=0;
+var j=1;
+var str="";
+var kin=+prompt("Enter the Number: ");
+while(j<=kin){
+    str=func(i,j,str);
+    
+    let temp=j;
+    j=i+j;
+    i=temp;
+}
+console.log(str);
+function func(i,j,str){
+    for(let k=i+1;k<j;k++){
+        str+=k+" ";
+    }
+    return str;
+}
+alert(`Non-fibbonaci numbers within ${kin} are ${str} `);
+
+// 0 1 
+    </script>
+</head>
+<body style="height: 100vh;border: solid;display: flex;justify-content: center;align-items: center;">
+    <div >
+        <h1 style="font-size: 33px;"><span style="color: red;">Click</span> below to fetch the javascript Non-fibbonaci Code</h1>
+    <a href="./javascript.js" style="display: inline-block;margin-left:50%;">Click me</a>
+</div>
+</body>
+</html>
